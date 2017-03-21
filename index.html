@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>三为电子</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/reMoveRelguar.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="" id="css"/>
+</head>
+<body>
+	<div class="header posiRela">
+		<div class="inner1240Box clearfix">
+			<img src="img/mainpage_headerLeftLogo.png" alt="加载图片" class="mainpage_headerLeftLogo"/>
+			<div class="mainpage_headerRightBox">
+				<ul class="mainpage_headerRightLeftPart">
+					<li class="mainpage_link active">首页</li>
+					<li class="productpage_link">产品
+						<div class="productHoleBox">
+							<div class="inner1240Box height100per posiRela">
+								<ul class="productHoleBox_innerUl clearfix">
+									<li class="productphonepage_link">
+										<img src="img/mainpage_productPhone_pic.png" alt="加载图片" />
+										话机
+									</li>
+									<li class="productsmartpage_link">
+										<img src="img/mainpage_productSmartPhone_pic.png" alt="加载图片" />
+										慧话宝
+									</li>
+									<li class="productchangepage_link">
+										<img src="img/mainpage_productChange_pic.png" alt="加载图片" />
+										交换机
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="ourpage_link">我们</li>
+					<li class="serverpage_link">服务</li>
+				</ul>
+				<ul class="mainpage_headerRightLine"></ul>
+				<ul class="mainpage_headerRightRightPart">
+					<li onclick='$("iframe").last().contents().find("#launchBtn").click();'><img src="img/mainpage_headerRightQQ.png" alt="加载图片"/></li>
+					<li class="mainpage_headerRightPhone posiRela"><img src="img/mainpage_headerRightPhone.png" alt="加载图片" />
+						<div class="marinpage_rightPhoneBox">
+							<h5>全国统一客服电话：</h5>
+							400-826-2277
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--header-->
+	
+	<!--main-->
+	<div id="main">
+		
+	</div>
+	
+	
+	<!--footer-->
+	<div class="footer">
+		<div class="mainpage_footerFontBox">
+			<div class="mainpage_footerFontBoxLeft">
+					杭州三为电子技术有限公司
+				<!--杭州三为电子技术有限公司&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2016 浙ICP备15018940号-1-->
+			</div>
+			<ul class="mainpage_footerFontBoxRight">
+				<li class="mainpage_link active">首页</li>
+				<span></span>
+				<li class="productsmartpage_link">产品</li>
+				<span></span>
+				<li class="ourpage_link">我们</li>
+				<span></span>
+				<li class="serverpage_link">服务</li>
+			</ul>
+		</div>
+		<div class="mainpage_footerBottomBox">
+			Copyright © 2016 浙ICP备15018940号-1
+		</div>
+	</div>
+	<!--提前放入qq-->
+	<div id="qq_hidden" style="display:none;"></div>
+	
+	
+	<!--提前放入地图容器（隐藏）-->
+	<div class="mapBoxDisNon" style="display: none;width: 100%;height: 100%;" >
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=uGaLPgqMWw0VExOETV2Hb1vucnoG3PQ5"></script>
+					 <body>
+					    <!--百度地图容器-->
+					    <div style="width:100%;height:100%;border:#ccc solid 1px;font-size:12px" id="map"></div>
+					
+					  </body>
+					  <script type="text/javascript">
+					    //创建和初始化地图函数：
+					    function initMap(){
+					      createMap();//创建地图
+					      setMapEvent();//设置地图事件
+					      addMapControl();//向地图添加控件
+					      addMapOverlay();//向地图添加覆盖物
+					    }
+					    function createMap(){ 
+					      map = new BMap.Map("map"); 
+					      map.centerAndZoom(new BMap.Point(122.130365,30.29985),17);
+					    }
+					    function setMapEvent(){
+					      map.enableScrollWheelZoom();
+					      map.enableKeyboard();
+					      map.enableDragging();
+					      map.enableDoubleClickZoom()
+					    }
+					    function addClickHandler(target,window){
+					      target.addEventListener("click",function(){
+					        target.openInfoWindow(window);
+					      });
+					    }
+					    function addMapOverlay(){
+							var icon = new BMap.Icon('img/mapIcon.png', new BMap.Size(20, 32), {
+							    anchor: new BMap.Size(10, 30)
+							});
+							
+							var mkr =new BMap.Marker(new BMap.Point(120.132,30.297987), {
+							    icon: icon,
+							    enableDragging: true,
+    							raiseOnDrag: true
+							});
+							var point =new BMap.Point(120.132009,30.298236);
+							var opts={
+								width:100,
+								height:30,
+							};
+							var infoWindow = new BMap.InfoWindow("杭州电子商务产业园",opts); 
+							map.openInfoWindow(infoWindow,point); 
+							mkr.addEventListener("mouseover", function(){this.openInfoWindow(infoWindow);});
+							map.addOverlay(mkr);
+					    }
+					    //向地图添加控件
+					    function addMapControl(){
+					      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_TOP_LEFT});
+					      scaleControl.setUnit(BMAP_UNIT_METRIC);
+					      map.addControl(scaleControl);
+					      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:1});
+					      map.addControl(navControl);
+					    }
+					   
+					    var map;
+					      initMap();
+					       map.addEventListener('click', function(e){
+						    console.log(e.point);
+						   });
+							    
+						
+					  </script>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

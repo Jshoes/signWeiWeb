@@ -1,0 +1,725 @@
+/*头部样式*/
+.header{
+	width: 100%;
+	height: 80px;
+	background-color: #FFFFFF;
+	line-height: 80px;
+}
+.mainpage_headerLeftLogo{
+	float: left;
+	width: 143px;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mainpage_headerRightBox{
+	width: 40%;
+	height: 100%;
+	float: right;
+	font-size: 16px;
+}
+.mainpage_headerRightLeftPart{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+.mainpage_headerRightLeftPart>li{
+	float: left;
+	width: 25%;
+	height: 77px;
+	cursor: pointer;
+	text-align: center;
+	border-bottom: 3px solid #FFFFFF;
+}
+.mainpage_headerRightLeftPart>li:hover{
+	color: #808080;
+}
+.mainpage_headerRightLeftPart>li.active:hover{
+	color: #333333;
+	cursor: default;
+}
+.mainpage_headerRightRightPart>li{
+	float: left;
+	width: 35%;
+	height: 100%;
+	cursor: pointer;
+	text-align: center;
+}
+.mainpage_headerRightRightPart>li>img{
+	width: 26px;
+	height: auto;
+	vertical-align: middle;
+}
+.mainpage_headerRightRightPart{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+.mainpage_headerRightLine{
+	width: 2px;
+	height: 54px;
+	background-color: #D9D9D9;
+	float: left;
+	margin: 13px 23px 0 23px;
+}
+.mainpage_headerRightLeftPart>.active{
+	border-bottom: 3px solid #000000;
+}
+.productpage_link:hover .productHoleBox{
+	display: block;
+}
+.productHoleBox{
+	position: absolute;
+	height: 150px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #B8B8B8;
+	left: 0;
+	top: 100%;
+	z-index: 99;
+	line-height: 50px;
+	display: none;
+}
+.productHoleBox_innerUl{
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 3.6%;
+}
+.productHoleBox li{
+	width: 33%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+.productHoleBox li>img{
+	width: 80%;
+  	height: auto;
+  	display: block;
+  	margin: 20px auto;
+}
+.marinpage_rightPhoneBox{
+	width: 200px;
+	height: 80px;
+	line-height: 40px;
+	font-size: 20px;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	text-align: center;
+	z-index: 99;
+	background-color: #FFFFFF;
+	display: none;
+}
+.mainpage_headerRightPhone:hover .marinpage_rightPhoneBox{
+	display: block;
+}
+/*尾部样式*/
+.footer{
+	width: 100%;
+	height: 160px;
+	background-color: #111315;
+	font-size: 14px;
+	color: #666666;
+	overflow: hidden;
+}
+.mainpage_footerFontBox{
+	width: 50%;
+	height: 60%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 140px;
+}
+.mainpage_footerFontBoxLeft{
+	width: 40%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.mainpage_footerFontBoxRight{
+	width: 60%;
+	height: 100%;
+	float: right;
+}
+.mainpage_footerBottomBox{
+	width: 80%;
+	height: 40%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 32px;
+}
+.mainpage_footerFontBoxRight>li{
+	float: left;
+	width: 20%;
+	height: 100%;
+	cursor: pointer;
+}
+.mainpage_footerFontBoxRight>li:hover{
+	color: #b3b3b3;
+}
+.mainpage_footerFontBoxRight>span{
+	float: left;
+	width: 1px;
+	height: 16px;
+	margin: 62px 10px;
+	background-color: #666666;
+}
+
+/*首页样式*/
+/*首页banner部分*/
+.mainpage_banner{
+	width: 100%;
+	height: 880px;
+	position: relative;
+	overflow: hidden;
+}
+.bannerBox{
+	width: 200%;
+	height: 100%;
+	position: absolute;
+}
+.bannerPart.first{
+	width: 50%;
+	height: 100%;
+	background-color: #171717;
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+.bannerPart.second{
+	width: 50%;
+	height: 100%;
+	background-color: none;
+	background-image: url(../img/manpage_banner2Pic.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% -50%;
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+.manpage_banner_centerPic{
+	display: block;
+	width: 50%;
+	height: auto;
+	position: absolute;
+	left: 25%;
+	bottom: 10%;
+}
+.manpage_banner_holePic{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mainpage_bannerFontBox{
+	width: 100%;
+	line-height: 80px;
+	position: absolute;
+	top: 15%;
+	left: 0;
+	font-size: 44px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.mainpage_bannerFontBox_secondTips{
+	font-size: 18px;
+	width: 100%;
+	position: absolute;
+	top: 20%;
+}
+.mainpage_bannerFontBox_secondTips>h1>span{
+	font-size: 60px;
+}
+.banner_btnBox{
+	width: 70px;
+	height: 25px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	bottom: 3%;
+}
+.mainpage_bannerBtnDetail{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #64656a;
+	background-color: transparent;
+	cursor: pointer;
+	float: left;
+	margin-left: 10px;
+	box-sizing: border-box;
+}
+.mainpage_bannerBtnDetail.active{
+	background-color: #64656a;
+}
+/*首页产品部分*/
+.mainpage_productpart{
+	width: 100%;
+	background-color: #f4f4f4;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 180px;
+}
+.mainpage_holetitle{
+	margin: 80px auto 0;
+	font-size: 26px;
+	width: 70px;
+	position: relative;
+	text-align: center;
+}
+.mainpage_holetitle .h5{
+	color: #808080;
+	width: 200px;
+	margin-left: -65px;
+}
+.mainpage_holetitle .mainpage_titleunderline{
+	display: block;
+	width: 40px;
+	height: 2px;
+	position: absolute;
+	background-color: #808080;
+	left: 50%;
+	margin-left: -20px;
+	top: 130%;
+}
+.mainpage_productContentBox{
+	width: 90%;
+	height: auto;
+	margin: 50px auto 0;
+	position: relative;
+}
+.mainpage_productPart{
+	float: left;
+	width: 32%;
+	margin-left: 1%;
+	background-color: #FFFFFF;
+	position: relative;
+	cursor: pointer;
+	color: #333333;
+}
+.mainpage_productPart:hover{
+	box-shadow: 2px 6px 17px 2px #ccc;
+}
+.mainpage_productPart:hover .mainpage_productPartBottom{
+	color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	transition: color .5s linear;
+	-webkit-transition: color .5s linear;
+	-moz-transition: color .5s linear;
+	-o-transition: color .5s linear;
+}
+.mainpage_productPart:hover .likeProgressBar{
+	width: 100%;
+	transition: width .5s linear;
+	-webkit-transition: width .5s linear;
+	-moz-transition: width .5s linear;
+	-o-transition: width .5s linear;
+}
+.likeProgressBar{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 45px;
+	width: 0;
+	background-color: #009bff;
+}
+.mainpage_productPart>img{
+	display: block;
+	width: 80%;
+	height: auto;
+	margin: 20px auto 20px;
+}
+.mainpage_productPartBottom{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	font-size: 16px;
+	border-bottom: 5px solid #000000;
+}
+.mainpage_productPartBottomFont{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+.mainpage_productPartBottom span{
+	display: block;
+	width: 20px;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -20px;
+	z-index: 11;
+}
+.mainpage_productPartBottom span img{
+	width: 100%;
+	height: auto;
+}
+/*首页我们部分*/
+.mainpage_ourtitleTopPic{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mainpage_aboutUsPart{
+	width: 100%;
+	background-color: #FFFFFF;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+.mainpage_aboutUsContentBox{
+	width: 1240px;
+	margin: 100px auto 0;
+	font-size: 16px;
+	text-align: center;
+	line-height: 36px;
+}
+.learnMoreBtn{
+	display: block;
+	margin: 100px auto 0;
+	width: 204px;
+	height: 44px;
+	line-height: 44px;
+	background-color: #FFFFFF;
+	border: 1px solid #BFBFBF;
+	outline: none;
+	position: relative;
+}
+.learnMoreBtnBox{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	transition: color .5s linear;
+	-webkit-transition: color .5s linear;
+	-moz-transition: color .5s linear;
+	-o-transition: color .5s linear;
+}
+.learnMoreBtnProgress{
+	background-color: #009BFF;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	transition: width .5s linear;
+	-webkit-transition: width .5s linear;
+	-moz-transition: width .5s linear;
+	-o-transition: width .5s linear;
+}
+.learnMoreBtn:hover{
+	color: #FFFFFF;
+}
+.learnMoreBtn:hover .learnMoreBtnProgress{
+	width: 100%;
+}
+/*首页结束*/
+
+
+/*产品话机页面*/
+.productpage_phonePart{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	position: relative;
+}
+.productpage_phoneSlidePart{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.productpage_phoneSlidePart img{
+	width: 100%;
+	height: auto;
+}
+.productpage_phoneSlidePart .productpage_phoneFirst{
+	width: 80%;
+	height: auto;
+}
+.productpage_titleBox{
+	margin-top: 50px;
+}
+.productpage_titleBoxTips{
+	margin-top: 20%;
+	margin-left: 30%;
+}
+.productpage_titleBoxSpecial{
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	top: 7%;
+	text-align: center;
+}
+.productpage_titleBox li,.productpage_titleBoxTips li{
+	margin-top: 10px;
+}
+.productpage_bigTitle{
+	font-size: 44px;
+}
+.productpage_littleTitle{
+	font-size: 36px;
+}
+.productpage_firstTitle{
+	font-size: 40px;
+}
+.productpage_secondTitle{
+	font-size: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.productpage_titleBoxSpecial .productpage_secondTitle,.productpage_smartPageTitleBox .productpage_secondTitle{/*包含特殊情况下一些对secondtitle的样式清除*/
+	padding: 0;
+	border: none;
+	margin-bottom: 0;
+	display: block;
+}
+.productpage_thirdTitle{
+	font-size: 18px;
+}
+.productpage_phoneHoleImg{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/*产品话机结束*/
+
+/*产品交换机页面*/
+.changepage_partBox{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	padding-top: 50px;
+  	padding-bottom: 200px;
+}
+#changeProTable{
+	width: 100%;
+}
+#changeProTable th{
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+#changeProTable td{
+	padding: 20px;
+}
+#changeProTable th,#changeProTable td{
+	border: 1px solid #BFBFBF;
+}
+.changepro_productName,.changepro_productNum{
+	width: 15%;
+}
+.changepro_productData{
+	width: 70%;
+}
+.changepro_productDataPart{
+	width: 32%;
+	float: left;
+	margin-left: 1%;
+	line-height: 40px;
+	font-size: 12px;
+}
+/*产品交换机结束*/
+
+/*产品慧话宝页面*/
+.productpage_phonePart>img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.productpage_smartPageTitleBox{
+	position: absolute;
+	z-index: 10;
+	left: 60%;
+	top: 25%;
+	color: #fff;
+}
+/*产品慧话宝结束*/
+
+
+
+/*服务页面*/
+.serverpage_titleBannerBox{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.serverpage_titlebanner{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.serverpage_titleFontBox{
+	width: 1240px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -620px;;
+	margin-top: -25px;
+	font-size: 40px;
+}
+.serverpage_partBox{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 200px;
+}
+.serverpage_iconPicBox{
+	width: 25%;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+}
+.serverpage_iconPicBox:hover h4{
+	color: #009BFF;
+}
+.serverpage_iconPicBox:hover{
+	margin-top: -30px;
+}
+.serverpage_iconPicBox h4{
+	color: #333333;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.serverpage_iconPicBox h5{
+	color: #808080;
+}
+/*服务页面结束*/
+
+/*我们页面*/
+.ourpage_bannerPic{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.ourpage_partBox{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	position: relative;
+	overflow: hidden;
+	padding: 200px 0;
+}
+.ourpage_titleFontBox{
+	text-align: center;
+  	line-height: 40px;
+  	font-size: 16px;
+}
+.ourpage_custPicBox{
+	width: 20%;
+	height: 124px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+.ourpage_custPicBox img{
+	width: 100%;
+	display: block;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	transition: top .5s linear;
+	-webkit-transition: top .5s linear;
+	-moz-transition: top .5s linear;
+	-o-transition: top .5s linear;
+}
+.ourpage_custPicBox .cust_gray{
+	top: 0;
+}
+.ourpage_custPicBox .cust_color{
+	top: 100%;
+}
+.ourpage_custPicBox:hover .cust_gray{
+	top: -100%;
+}
+.ourpage_custPicBox:hover .cust_color{
+	top: 0;
+}
+.ourpage_contactUs{
+	width: 140px;
+}
+.ourpage_contactUs .h5{
+	margin-left: -30px;
+}
+.ourpage_mapBox{
+	width: 100%;
+	height: 440px;
+}
+.ourpage_mapLeftFontBox{
+	font-size: 16px;
+}
+.ourpage_mapLeftFontBox>h4{
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+/*我们页面结束*/
+
+/*通用样式*/
+.boxUpAndFontShow{
+	position: relative;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	top: 40px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	-moz-opacity:0; 
+	-khtml-opacity:0; 
+}
+/*去除qq交谈 把iframe标签隐藏了*/
+iframe{
+	display: none;
+}
+
+/*定义类名样式覆盖*/
+.height100per{
+	height: 100%;
+}
+.boxTopBottomPad100{
+	padding: 100px 0;
+}
+.marginTop40p{
+	margin-top: 40%;
+}
+.marginTop100{
+	margin-top: 100px;
+}
+.marginTop0{
+	margin-top: 0;
+}
+.backColor251{
+	background-color: #FBFBFB;
+}
+.backColor242{
+	background-color: #F2F2F2;
+}
+.backColor244{
+	background-color: #F4F4F4;
+}
+.posiRela{
+	position: relative;
+}
